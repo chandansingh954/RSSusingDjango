@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title> </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% verbatim %}
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% endverbatim %}
+{% load static %}  
+<link href="{% static '/css/style.css' %}" type="text/css" rel="stylesheet">  
+
+</head>
+<body >
+<div class="shadow">
+  <div class="container">
+  
+  
+  
+           <form class="input-form text-center" name = "form"  action="/news" method = "GET"  >
+ {% csrf_token %}  
+
+                <h1> Select your URL </h1>
+                  <select name="urlname">
+<option value="http://feeds.bbci.co.uk/news/rss.xml">Select a RSS-feed:</option>
+<option value="http://feeds.bbci.co.uk/news/rss.xml">BBCI News</option>
+<option value="http://news.google.com/news?ned=us&topic=h&output=rss">Google News</option>
+
+</select>
+
+                  <br/>
+                  <input id="btn" type="submit" name="submit" class="form-submit-button" value="News"/>
+              </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Feeds</title>
+</head>
+<body>
+<div id="demo-wish"class="card text-center">
+           </div>
+        <div id="demo" class="card text-center">
+            <ul>
+    {% for athlete in urlname %}
+    <li>{{ athlete.title }}</li>
+    <li><a href={{ athlete.link }}'>{{athlete.title}} </a></li>
+    <li><p>{{athlete.description}} </p></li>
+    <li><p>{{athlete.published_parsed}} </p></li>
+    {% endfor %}
+</ul>
+
+        </div>
+      </div>
+</body>
+</html>

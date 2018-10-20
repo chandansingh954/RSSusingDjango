@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Feeds</title>
+{% load static %}  
+<link href="{% static '/css/style.css' %}" type="text/css" rel="stylesheet">  
+</head>
+<body>
+<div class="topbox">
+<div class="padtopbox">
+<h2>What is this page?</h2>
+This is an RSS feed from the News - Home website. RSS feeds allow you to stay up to date with the latest news and features you want from  News - Home.
+
+To subscribe to it, you will need a News Reader or other similar device.
+</div>
+<div class="mainbox">
+<div class="itembox">
+ <div class="paditembox">
+    {% for n in urlname %}
+    <div  class="item">
+      <ul>
+        <li>
+<a class="item" href={{ athlete.link }}'>{{n.title}} </a>
+<div>
+    <p>{{n.description}} </p>
+    <p>{{n.published}} </p>
+         </div>
+        </li>
+      </ul>
+    </div>
+    {% endfor %}
+ </div>
+</div>
+</div>
+</body>
+</html>

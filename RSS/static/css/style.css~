@@ -1,0 +1,132 @@
+body {
+    background-color: #fff;
+    border: 0px;
+    margin: 10px;
+    font-family: Verdana,Arial,Helvetica,sans-serif,"MS sans serif";
+    font-size: 80%;
+    font-weight: normal;
+    color: #000000;
+}
+div {
+    display: block;
+}
+#item ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+#item li {
+    margin: 0;
+    padding: 5px 0px;
+}
+.itembox {
+    width: 62%;
+    float: left;
+    padding-top: 10px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none;
+}
+#item ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+.paditembox {
+    padding: 10px 5px 10px 10px;
+}
+a.item:visited {
+    font-weight: bold;
+}
+a.item:link {
+    font-weight: bold;
+}
+a:visited {
+    text-decoration: none;
+    font-size: 100%;
+    color: #6666CC;
+}
+a:link {
+    text-decoration: none;
+    font-size: 100%;
+    color: #000099;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.mainbox {
+    width: 100%;
+    background: url(http://newsimg.bbc.co.uk/shared/bsp/xsl/rss/img/boxbar2.gif) repeat-x;
+    padding-top: 10px;
+}
+p {
+    margin: 0px;
+    padding: 5px 0px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.topbox {
+    width: 100%;
+}
+.padtopbox {
+    padding: 10px;
+    border: 1px solid #999;
+}
+.shadow {
+-webkit-border-radius: 0% 0% 100% 100% / 0% 0% 8px 8px;
+-webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
+}
+.container {
+  margin: 0 auto;
+  margin-top: 50px;;
+
+  height: 80vh;
+  background: #F2F2F2;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 2px #fff inset,
+              -1px -1px 2px #fff inset;
+  border-radius: 3px/6px;         
+    
+    
+}
+select,option{font-size:15px;}
+.form-submit-button {
+
+background: #0066A2;
+
+color: white;
+
+border-style: outset;
+
+border-color: #0066A2;
+
+height: 40px;
+
+width: 70px;
+
+font: bold 15px arial, sans-serif;
+
+text-shadow:none;
+
+}
